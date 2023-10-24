@@ -1,0 +1,109 @@
+
+/*  clear out our default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ }
+
+body {
+  background: whitesmoke;
+  color: darkkhaki;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+
+/* 1. Set up the outer container -- header footer and main section */
+.flex-outer-container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+header,
+footer {
+  text-align: center;
+}
+
+main {
+  flex: 1;
+}
+
+h1 {
+  font-size: 3em;
+  color: #FE6969;
+  padding-bottom: .68em;
+  letter-spacing: .03em;
+}
+
+h2 {
+  color:#FFA3A3;
+  font-size: 2.5em;
+  padding-bottom: .68em;
+  letter-spacing: .03em;
+}
+
+h3 {
+  font-size: 2em;
+  color: #FE6969;
+  padding-bottom: .68em;
+  letter-spacing: .03em;
+}
+
+h4 {
+  color: #FFA3A3;
+  font-size: 1.5em;
+  padding-bottom: .68em;
+  letter-spacing: .03em;
+}
+
+/* On the main section add the grid property */
+.grid-container {
+  display: grid;
+  grid-template-columns: 2.5fr 1fr 1fr 1fr; /* establishes 3 columns */
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 25px;
+  align-items: stretch;
+
+}
+
+.flex-layout {
+  display: flex;
+  /* border: 2px solid green; */
+}
+
+.image-container, 
+.content-container {
+  width: 100%;
+  padding: 10px;
+  height: 100%;
+}
+
+a {
+  color:#c7b39b;
+}
+
+.content-container p {
+  line-height: 1.68em;
+}
+
+img {
+  width: 100%;
+  /* height: 100%; */
+  object-fit:cover;
+}
+
+footer a {
+  color: #E4E8E9;
+  text-decoration: none;
+}
+
+p {
+  font-size: 1.68em;
+  font-family:'Quicksand',sans-serif ;
+}
+
+main, header, footer {
+  padding: 40px;
+  border: 1px solid #000000;
+  }
