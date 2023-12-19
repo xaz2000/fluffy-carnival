@@ -1,0 +1,90 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    /* min-height: 100vh; */
+    font-family: 'Spectral', serif;
+    background-color: #234A40;
+    color: #9BEC90;
+}
+
+.grid-container {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: 20px;
+}
+
+img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+
+.item {
+    /* place code you want to apply to all the items here */
+    border: 1px solid #9BEC90;
+    padding: 20px 40px;
+    border-radius: 0.75em;
+}
+
+.item--1 {
+    grid-column-start:1;
+    grid-column-end: 3;
+
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.item--2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.item--3 {
+    grid-column-start: 5;
+    grid-column-end: 7;
+
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.item--4 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+.item--5 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+.item--6 {
+    grid-column-start: 5;
+    grid-column-end: 7;
+
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+.clip-circle {
+    clip-path: circle(250px at center);
+}

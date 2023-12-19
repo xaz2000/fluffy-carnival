@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 1.2em;
+  overflow-x: hidden;
+  /* color: #f2f2f2; */
+}
+
+#gallerySection{
+  width: 100%;
+  background-color: #ffffff;
+  text-align: center;
+  overflow:visible;
+  height: calc(2000px + 400px);
+}
+
+#galleryMenu{
+  margin: 80px auto 0 auto;
+  width: 955px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+#galleryMenu > .menuItem{
+  padding: 10px 30px;
+  text-transform: uppercase;
+  font-size: 1.3em;
+  cursor: pointer;
+  z-index: 1;
+  transition: color 0.7s 0.3s;
+}
+
+#galleryMenu > .selector{
+  height: 100%;
+  background-color: red;
+  width: 95px;
+  position: absolute;
+  top: 0;
+  left: 0px;
+}
+
+/*95 0, 270 145, 440 145, 600 145, 770 145, 910 145, 1200 145 */
+/*95 0, 150 134, 150 300, 150 450, 150 610, 150 770, 220 950 */
+/*76 0, 76 104, 300 76, 450 76, 620 76, 780 76, 950 76*/
+#galleryContainer{
+  width: 2500px;
+  height: 2000px;
+  overflow:visible;
+  margin: 20px auto 500px auto ;
+  position:relative;
+}
+
+#galleryContainer .galleryItem{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10%;
+  height: 10%;
+  transform-origin: center;
+}
+
+#galleryContainer .galleryItem img{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media(max-width: 1200px){
+  #galleryContainer{
+    width: 70%;
+    height: 1500px;
+  }
+  #galleryContainer .galleryItem{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 20%;
+  }
+}
+
+@media(max-width: 958px){
+  #galleryContainer{
+    height: 2700px;
+  }
+  #galleryContainer .galleryItem{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 11.11%;
+  }
+}
+
+#footer{
+  width: 100%;
+  height: 100px;
+  background-color: rgb(255, 255, 255);
+}
+@media(max-width: 955px){
+  #galleryMenu{
+    width: 600px;
+  }
+}
+@media(max-width: 600px){
+  #galleryMenu{
+    width: 400px;
+  }
+  #galleryMenu > .menuItem{
+    font-size: 0.7em;
+  }
+}
+
