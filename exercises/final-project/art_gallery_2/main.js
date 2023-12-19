@@ -28,7 +28,7 @@ galleryMenuChange(currentGalleryMenuSelection);
 
 //Set pos for gallery selector
 function galleryMenuChange(id){
-    if (window.matchMedia('min-width: 956px)').matches){
+    if (window.matchMedia('(min-width: 956px)').matches){
         switch(id){
             case 'all':
                 changeGallerySelector("0px", "95px", "all");
@@ -74,7 +74,7 @@ function galleryMenuChange(id){
             case 'robertMapplethorpe':
                 changeGallerySelector("950", "220", "robertMapplethorpe");
         }
-    }else if(window.matchMedia('(max-width: 955px) and (min-width: 601px)').matches){
+    }else if(window.matchMedia('(max-width: 600px)').matches){
         switch(id){
             case 'all':
                 changeGallerySelector("0px", "76px", "all");
@@ -104,10 +104,10 @@ function galleryMenuChange(id){
 function changeGallerySelector(left, width, id){
     gallerySelector.style.left = left;
     gallerySelector.style.width = width;
-    for(let i = 0; i <galleryMenuItems.length; i++){
-        const galleryMenuItem = galleryMenuItems [i];
+    for(let i = 0; i < galleryMenuItems.length; i++){
+        const galleryMenuItem = galleryMenuItems[i];
         if(galleryMenuItem.id === id){
-            galleryMenuItem.style.color = "white";
+            galleryMenuItem.style.color = "pink";
             continue;
         }
         galleryMenuItem.style.color = "black";
