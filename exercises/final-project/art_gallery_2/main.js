@@ -173,6 +173,45 @@ function setGalleryContainer(choice){
                 gallerySection.style.height = 'calc(300px + 400px)';
                 break;
         }
+    }else if(window.matchMedia('(max-width: 900px) and (min-width: 400px)').matches){
+        switch(choice){
+            case 'all':
+                moveGalleryContainer([{left: '0%', top: '0%', num: 0},{left: '50%', top: '0%', num: 1},{left: '0%', top: '2.8%', num: 2},{left: '50%', top: '2.8%', num: 3},{left: '0%', top: '5.6%', num: 4},
+                {left: '50%', top: '5.6%', num: 5},{left: '0%', top: '8.4%', num: 6},{left: '50%', top: '8.4%', num: 7},{left: '0%', top: '11.2%', num: 8},{left: '50%', top: '11.2%', num: 9},
+                {left: '0%', top: '14%', num: 10},{left: '50%', top: '14%', num: 11},{left: '0%', top: '16.8%', num: 12},{left: '50%', top: '16.8%', num: 13},{left: '0%', top: '19.6%', num: 14},{left: '50%', top: '19.6%', num: 15},
+                {left: '0%', top: '22.4%', num: 16},{left: '50%', top: '22.4%', num: 17},{left: '0%', top: '25.2%', num: 18},{left: '50%', top: '25.2%', num: 19},{left: '0%', top: '28%', num: 20},{left: '50%', top: '28%', num: 21},{left: '0%', top: '30.8%', num: 22},
+                {left: '50%', top: '30.8%', num: 23},{left: '0%', top: '33.6%', num: 24},{left: '50%', top: '33.6%', num: 25},{left: '0%', top: '36.4%', num: 26},{left: '50%', top: '36.4%', num: 27},{left: '0%', top: '39.2%', num: 28},{left: '50%', top: '39.2%', num: 29},
+                {left: '0%', top: '42%', num: 30},{left: '50%', top: '42%', num: 31},{left: '0%', top: '44.8%', num: 32},{left: '50%', top: '44.8%', num: 33},{left: '0%', top: '47.6%', num: 34},{left: '50%', top: '47.6%', num: 35},
+                {left: '0%', top: '50.4%', num: 36},{left: '50%', top: '50.4%', num: 37},
+                {left: '0%', top: '53.2%', num: 38},{left: '50%', top: '53.2%', num: 39},
+                {left: '0%', top: '56%', num: 40},{left: '50%', top: '56%', num: 41},
+                {left: '0%', top: '58.8%', num: 42},{left: '50%', top: '58.8%', num: 43},
+                {left: '0%', top: '61.6%', num: 44},{left: '50%', top: '61.6%', num: 45},
+                {left: '0%', top: '64.4%', num: 46},{left: '50%', top: '64.4%', num: 47},
+                {left: '0%', top: '67.2%', num: 48},{left: '50%', top: '67.2%', num: 49},
+                {left: '0%', top: '70%', num: 50},{left: '50%', top: '70%', num: 51},
+                {left: '0%', top: '72.8%', num: 52},{left: '50%', top: '72.8%', num: 53},
+                {left: '0%', top: '75.6%', num: 54},{left: '50%', top: '75.6%', num: 55},
+                {left: '0%', top: '78.4%', num: 56},{left: '50%', top: '78.4%', num: 57},
+                {left: '0%', top: '81.2%', num: 58},{left: '50%', top: '81.2%', num: 59},
+                {left: '0%', top: '84%', num: 60},{left: '50%', top: '84%', num: 61},
+                {left: '0%', top: '86.8%', num: 62},{left: '50%', top: '86.8%', num: 63},
+                {left: '0%', top: '89.6%', num: 64},{left: '50%', top: '89.6%', num: 65},
+                {left: '0%', top: '92.4%', num: 66},{left: '50%', top: '92.4%', num: 67},
+                {left: '0%', top: '95.2%', num: 68},{left: '50%', top: '95.2%', num: 69}]);
+                gallerySection.style.height = 'calc(900px + 400px)';
+                break;
+            case 'davidHammons':
+                moveGalleryContainer([{left: '0', top: '0', num: 0},{left: '50%', top: '0', num: 1},{left: '0%', top: '20%', num: 2},{left: '50%', top: '20%', num: 3},{left: '0%', top: '40%', num: 4},
+                {left: '50%', top: '40%', num: 5},{left: '0%', top: '60%', num: 6},{left: '50%', top: '60%', num: 7},{left: '0%', top: '80%', num: 8},{left: '50%', top: '80%', num: 9}]);
+                gallerySection.style.height = 'calc(600px + 400px)';
+                break;
+            case 'ruthAsawa':
+                moveGalleryContainer([{left: '0%', top: '0%', num: 10},{left: '50%', top: '0%', num: 11},{left: '0%', top: '20%', num: 12},{left: '50%', top: '20%', num: 13},{left: '0%', top: '40%', num: 14},{left: '50%', top: '40%', num: 15},
+                {left: '0%', top: '60%', num: 16},{left: '50%', top: '60%', num: 17},{left: '0%', top: '80%', num: 18},{left: '50%', top: '80%', num: 19}]);
+                gallerySection.style.height = 'calc(1500px + 400px)';
+                break;
+        }
     }
 }
 
@@ -210,4 +249,7 @@ function addTransition(transition){
 window.addEventListener("resize", e => {
     gallerySelector.style.transition = "none";
     galleryMenuChange(currentGalleryMenuSelection);
-})
+    addTransition("none");
+    gallerySection.style.transition = "none";
+    setGalleryContainer(currentGalleryMenuSelection);
+});
