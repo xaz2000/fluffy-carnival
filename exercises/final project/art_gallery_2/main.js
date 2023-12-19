@@ -167,6 +167,11 @@ function setGalleryContainer(choice){
                 {left: '0%', top: '20%', num: 55},{left: '20%', top: '20%', num: 56},{left: '40%', top: '20%', num: 57},{left: '60%', top: '20%', num: 58},{left: '80%', top: '20%', num: 59}]);
                 gallerySection.style.height = 'calc(300px + 400px)';
                 break;
+            case 'robertMapplethorpe':
+                moveGalleryContainer([{left: '0', top: '0', num: 60},{left: '20%', top: '0', num: 61},{left: '40%', top: '0', num: 62},{left: '60%', top: '0', num: 63},{left: '80%', top: '0', num: 64},
+                {left: '0%', top: '20%', num: 65},{left: '20%', top: '20%', num: 66},{left: '40%', top: '20%', num: 67},{left: '60%', top: '20%', num: 68},{left: '80%', top: '20%', num: 69}]);
+                gallerySection.style.height = 'calc(300px + 400px)';
+                break;
         }
     }
 }
